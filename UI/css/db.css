@@ -19,7 +19,7 @@ body {
 }
 .container1 {
 
-  width: 80%;
+  width: 100%;
   margin-left: 0;
   overflow:hidden;
  }
@@ -43,7 +43,7 @@ ul{
   background: #35424a;
   color: #ffffff;
   margin-top:0 ;
-  margin-bottom: 0;
+
 }
 .dark a{
     color:#ffffff;
@@ -51,10 +51,9 @@ ul{
   
   font-size: 12px;
 }
-.dark li {
- display:  inline-table;
-
-  padding: 0 20 0 20;
+.dark ul li {
+ padding: 10px;
+    display: block;
 }
 
 /* Header*/
@@ -63,8 +62,10 @@ header{
   color:#ffffff;
   padding-top:30px;
   min-height: 70px;
+  width: 86.8%;
   border-bottom: #e8491d 3px solid;
   font-size: 16px;
+  position:fixed;
 
 
 }
@@ -88,6 +89,7 @@ header li{
 }
 header #branding {
   float: left;
+
 
 }
 header #branding h1{
@@ -113,26 +115,13 @@ img.avatar {
   border-radius: 50%;
 }
 
-/* Showcase */
-#showcase{
-  min-height: 480px;
-  background: url('../img/showcase1.jpg') no-repeat 0 -570px;
-  text-align: center;
-  color: #ffffff;
-}
-#showcase h1 {
-  margin-top:100px;
-  font-size: 55px;
-  margin-bottom: 10px;
-}
-#showcase p{
-  font-size: 20px;
-}
+
 
 /* Boxes */
 #boxes{
 
-  margin-top: 20px;
+  margin-top: 10px;
+
 }
 #boxes .box{
   float: left;
@@ -145,10 +134,10 @@ img.avatar {
 }
 /*Sidebar*/
 aside#sidebar{
-  float:left;
-  width: 30%;
-  margin-top: 0;
-  
+    position: fixed;
+    margin-top: 102px; /* Push/pull it up/down */
+    margin-left: 0; 
+
 }
 aside#sidebar .quote input, aside#sidebar .quote textarea {
   width: 90%;
@@ -157,7 +146,9 @@ aside#sidebar .quote input, aside#sidebar .quote textarea {
 /*Main-col*/
 article#main-col {
   float: right;
+  margin-right: 100px;
   width: 65%;
+  margin-top:120px;
 }
 /*Services*/
 ul#services li {
