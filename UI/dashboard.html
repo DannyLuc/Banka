@@ -31,10 +31,10 @@
             <h3>Dashboard</h3>
              <nav>
           		<ul>
-            		<li><a href="#">Activate or Deactivate Account</a></li>
+            		<li><a href="#" onclick="document.getElementById('table1').style.display='block'">View List of Bank Account</a></li>
             		<li><a href="#">Create Admin or Staff user Account</a></li> 
-            		<li><a href="#">View List of Bank Account</a></li>
-            		<li><a href="#">Settings and Profile</a></li>         
+            		<li><a href="#">Profile</a></li>
+            		<li><a href="#">Settings</a></li>         
           		</ul>
         	 </nav>
           </div>
@@ -45,20 +45,97 @@
         
    	
         <article id="main-col">
-          <h1 class="page-title">Services</h1>
+        
           <ul id="services">
             <li>
-              <h3>Website Design</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies at, vulputate id lorem. Nulla facilisi.</p>
-						  <p>Pricing: $1,000 - $3,000</p>
+             <div id="table1" class="atable">
+              <h3>List of Bank Account</h3>
+			<table >
+				  <thead>
+				    <tr>
+				      <th>Action</th>
+				      <th>Account Id</th>
+				      <th>Owner</th>
+				      <th></th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+					     <td><select>
+						  <option value="">None</option>
+						  <option value="activate">activate</option>
+						  <option value="deactivate">deactivate</option>
+						   <option value="delete">delete</option>
+						  </select></td>
+				      <td><strong>1</strong></td>
+				      <td>John Doe</td>
+				       <td><a href="#">Details</a></td>
+				    </tr>
+				     <tr>
+					     <td><select>
+						  <option value="">None</option>
+						  <option value="activate">activate</option>
+						  <option value="deactivate">deactivate</option>
+						   <option value="delete">delete</option>
+						  </select></td>
+				      <td><strong>2</strong></td>
+				      <td>Jane Doe</td>
+				       <td><a href="#">Details</a></td>
+				    </tr>
+				    <tr>
+					     <td><select>
+						  <option value="">None</option>
+						  <option value="activate">activate</option>
+						  <option value="deactivate">deactivate</option>
+						  <option value="delete">delete</option>
+						  </select></td>
+				      <td><strong>3</strong></td>
+				      <td>Johnny Doe</td>
+				       <td><a href="#">Details</a></td>
+				    </tr>
+				    <tr>
+					     <td><select>
+						  <option value="">None</option>
+						  <option value="activate">activate</option>
+						  <option value="deactivate">deactivate</option>
+						  <option value="delete">delete</option>
+						  </select></td>
+				      <td><strong>4</strong></td>
+				      <td>John Smith</td>
+				       <td><a href="#">Details</a></td>
+				    </tr>
+				    <tr>
+					     <td><select>
+						  <option value="">None</option>
+						  <option value="activate">activate</option>
+						  <option value="deactivate">deactivate</option>
+						  <option value="delete">delete</option>
+						  </select></td>
+				      <td><strong>5</strong></td>
+				      <td>Will Butter</td>
+				       <td><a href="#">Details</a></td>
+				    </tr>
+				  </tbody>
+
+				</table>
+				 <button type="button" onclick="document.getElementById('table1').style.display='none'" class="cancelbtn">Cancel</button>
+				  <button type="button"  class="button_1">Submit</button>
+				</div>
+							<script>
+								// Get the modal
+								var atable = document.getElementById('table1');
+
+								// When the user clicks anywhere outside of the modal, close it
+						
+							</script>
             </li>
             <li>
-              <h3>Website Maintenance</h3>
+              <h3>Lorem ipsum dolor</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies at, vulputate id lorem. Nulla facilisi.</p>
 						  <p>Pricing: $250 per month</p>
             </li>
             <li>
-              <h3>Website Hosting</h3>
+              <h3>WLorem ipsum dolor</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies at, vulputate id lorem. Nulla facilisi.</p>
 						  <p>Pricing: $25 per month</p>
             </li>
@@ -70,7 +147,7 @@
     </section>
 
     <footer>
-      <p>Acme Web Deisgn, Copyright &copy; 2017</p>
+    	<p>Banka Web Access, Copyright &copy; 2019 </p>
     </footer>
   </body>
 </html>
