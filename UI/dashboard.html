@@ -1,0 +1,194 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Affordable and professional web design">
+	  <meta name="keywords" content="web design, affordable web design, professional web design">
+  	<meta name="author" content="Brad Traversy">
+    <title>Banka | Welcome John Doe</title>
+    <link rel="stylesheet" href="./css/db.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Banka</span> Dashboard</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">John Doe</a></li>
+           
+            <li>   			
+      			<img src="./img/img_avatar2.png" alt="Avatar" class="avatar">
+    		</li>
+           
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+ 	<aside id="sidebar">
+          <div class="dark">
+            <h3>Dashboard</h3>
+             <nav>
+          		<ul>
+            		<li><a href="#" onclick="document.getElementById('table1').style.display='block'">View List of Bank Account</a></li>
+            		<li><a href="#" onclick="document.getElementById('id02').style.display='block'">Create Admin or Staff user Account</a></li> 
+            		<li><a href="#">Profile</a></li>
+            		<li><a href="#">Settings</a></li>
+            		<li><a href="index.html">Logout</a></li>          
+          		</ul>
+        	 </nav>
+          </div>
+        </aside>
+
+    <section id="main">
+      <div class="container1">
+        
+   	
+        <article id="main-col">
+        
+          <ul id="services">
+            <li>
+             <div id="table1" class="atable">
+              <h3>List of Bank Account</h3>
+			<table >
+				  <thead>
+				    <tr>
+				      <th>Action</th>
+				      <th>Account Id</th>
+				      <th>Owner</th>
+				      <th></th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+					     <td><select>
+						  <option value="">None</option>
+						  <option value="activate">activate</option>
+						  <option value="deactivate">deactivate</option>
+						   <option value="delete">delete</option>
+						  </select></td>
+				      <td><strong>1</strong></td>
+				      <td>John Doe</td>
+				       <td><a href="#">Details</a></td>
+				    </tr>
+				     <tr>
+					     <td><select>
+						  <option value="">None</option>
+						  <option value="activate">activate</option>
+						  <option value="deactivate">deactivate</option>
+						   <option value="delete">delete</option>
+						  </select></td>
+				      <td><strong>2</strong></td>
+				      <td>Jane Doe</td>
+				       <td><a href="#">Details</a></td>
+				    </tr>
+				    <tr>
+					     <td><select>
+						  <option value="">None</option>
+						  <option value="activate">activate</option>
+						  <option value="deactivate">deactivate</option>
+						  <option value="delete">delete</option>
+						  </select></td>
+				      <td><strong>3</strong></td>
+				      <td>Johnny Doe</td>
+				       <td><a href="#">Details</a></td>
+				    </tr>
+				    <tr>
+					     <td><select>
+						  <option value="">None</option>
+						  <option value="activate">activate</option>
+						  <option value="deactivate">deactivate</option>
+						  <option value="delete">delete</option>
+						  </select></td>
+				      <td><strong>4</strong></td>
+				      <td>John Smith</td>
+				       <td><a href="#">Details</a></td>
+				    </tr>
+				    <tr>
+					     <td><select>
+						  <option value="">None</option>
+						  <option value="activate">activate</option>
+						  <option value="deactivate">deactivate</option>
+						  <option value="delete">delete</option>
+						  </select></td>
+				      <td><strong>5</strong></td>
+				      <td>Will Butter</td>
+				       <td><a href="#">Details</a></td>
+				    </tr>
+				  </tbody>
+
+				</table>
+				 <button type="button" onclick="document.getElementById('table1').style.display='none'" class="cancelbtn">Cancel</button>
+				  <button type="button"  class="button_1">Submit</button>
+				</div>
+							<script>
+								// Get the modal
+								var atable = document.getElementById('table1');
+													
+							</script>
+            </li>
+            <li>
+              
+		<div id="id02" class="modal1">
+  		
+  			<form class="modal-content1" action="#">
+    			<div class="SignUpContainer">
+     				 <h1>Create a user account for 
+     				 	<select id="showdiv" name="form_select" onchange="showDiv('hidden_div', this)">
+						  <option value="staff">Staff</option>
+						  <option value="admin">Admin</option>
+						  </select>
+						  </h1>
+      					<p>Please fill in this form to create an account.</p>
+      					<hr>
+      								 
+      					<label for="uname"><b>Name</b></label>
+      					<input type="text" placeholder="Enter Name" name="uname" required>
+      					<label for="email"><b>Email</b></label>
+      					<input type="text" placeholder="Enter Email" name="email" required>
+      					      					<label for="psw"><b>Password</b></label>
+      					<input type="password" placeholder="Enter Password" name="psw" required>
+      					<div id="hidden_div">
+      						<label for="tokken"><b>Tokken</b></label>
+      						<input type="text" placeholder="Tokken" name="tokken" required>
+      					</div>
+
+      					<div class="clearfix">
+        					<button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+       						<button type="submit" class="button_1">Create</button>
+       						<script>
+							function showDiv(divId, element)
+								{
+								    document.getElementById(divId).style.display = element.value == "admin" ? 'block' : 'none';
+								}
+													
+							</script>
+     				    </div>
+    			</div>
+  			</form>
+		</div>
+		<script>
+		// Get the modal
+		var modal = document.getElementById('id02');
+
+		</script>
+            </li>
+            <li>
+              <h3>Lorem ipsum dolor</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies at, vulputate id lorem. Nulla facilisi.</p>
+						  <p>dipiscing elit. Vivamus mi augue,</p>
+            </li>
+          </ul>
+        </article>
+
+     
+      </div>
+    </section>
+
+    <footer>
+    	<p>Banka Web Access, Copyright &copy; 2019 </p>
+    </footer>
+  </body>
+</html>
